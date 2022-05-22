@@ -1,0 +1,12 @@
+[package]
+name = "isosurface_api"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+isosurface = { git = "https://github.com/swiftcoder/isosurface", branch = "trunk" }
+implicit3d = "0.14.2"
+nalgebra = "0.22.1" # Keep in sync!

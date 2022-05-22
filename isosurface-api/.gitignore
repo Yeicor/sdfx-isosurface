@@ -1,0 +1,4 @@
+/target
+# Keep the compiled wasm file! TODO: Optimize it after building
+!/target/wasm32-unknown-unknown/release/isosurface_api.wasm
+
