@@ -17,7 +17,7 @@ var wasmBytes []byte
 var _ render.Render3 = &Renderer{}
 
 type Renderer struct {
-	runtime wazero.Runtime
+	runtime wazero.Runtime // TODO: This should be closed
 }
 
 //goland:noinspection GoUnusedExportedFunction
@@ -106,13 +106,13 @@ func (r *Renderer) Render(sdf3 sdf.SDF3, meshCells int, output chan<- *render.Tr
 			output <- tri
 		}
 	})
-	_, err := envModule.Instantiate(ctx)
+	_, err := envModule.Instantiate(ctx, r.runtime)
 	if err != nil {
 		log.Panicln(err)
 	}
 
 	// Instantiate the module and return its exported functions
-	module, err := r.runtime.InstantiateModuleFromCode(ctx, wasmBytes)
+	module, err := r.runtime.InstantiateModuleFromBinary(ctx, wasmBytes)
 	if err != nil {
 		log.Panicln(err)
 	}

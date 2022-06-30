@@ -4,14 +4,14 @@ go 1.18
 
 require (
 	github.com/deadsy/sdfx v0.0.0-20220508165057-718104295925
-	github.com/tetratelabs/wazero v0.0.0-20220521073726-18fdf3eeccc7
+	github.com/tetratelabs/wazero v0.0.0-20220630052417-63f6b2231142
 )
 
 require (
-	github.com/ajstarks/svgo v0.0.0-20200725142600-7a3c8b57fecb // indirect
+	github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
-	github.com/llgcode/draw2d v0.0.0-20200930101115-bfaf5d914d1e // indirect
+	github.com/llgcode/draw2d v0.0.0-20210904075650-80aa0a2a901d // indirect
 	github.com/yofu/dxf v0.0.0-20190710012328-5a6d1e83f16c // indirect
-	golang.org/x/image v0.0.0-20210216034530-4410531fe030 // indirect
-	gonum.org/v1/gonum v0.9.3 // indirect
+	golang.org/x/image v0.0.0-20220617043117-41969df76e82 // indirect
+	gonum.org/v1/gonum v0.11.0 // indirect
 )
