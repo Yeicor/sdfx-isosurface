@@ -20,19 +20,19 @@ type Renderer struct {
 	runtime wazero.Runtime // TODO: This should be closed
 }
 
+// ctx defaults until Renderer functions are context-aware.
+var ctx = context.Background()
+
 //goland:noinspection GoUnusedExportedFunction
 func NewRendererFast() *Renderer {
-	return &Renderer{runtime: wazero.NewRuntimeWithConfig(wazero.NewRuntimeConfigCompiler())}
+	return &Renderer{runtime: wazero.NewRuntimeWithConfig(ctx, wazero.NewRuntimeConfigCompiler())}
 }
 
 func NewRendererCompatible() *Renderer {
-	return &Renderer{runtime: wazero.NewRuntimeWithConfig(wazero.NewRuntimeConfigInterpreter())}
+	return &Renderer{runtime: wazero.NewRuntimeWithConfig(ctx, wazero.NewRuntimeConfigInterpreter())}
 }
 
 func (r *Renderer) Render(sdf3 sdf.SDF3, meshCells int, output chan<- *render.Triangle3) {
-	// Choose the context to use for function calls.
-	ctx := context.Background()
-
 	// Prepare the imports for providing access to our SDF to the code
 	envModule := r.runtime.NewModuleBuilder("env")
 	envModule.ExportFunction("sdf_aabb", func(ctx context.Context, m api.Module) uint32 {
