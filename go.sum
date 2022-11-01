@@ -46,8 +46,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/tetratelabs/wazero v1.0.0-beta.2 h1:Qa1R1oizAYHcmy8PljgINdXUZ/nRQkxUBbYfGSb4IBE=
-github.com/tetratelabs/wazero v1.0.0-beta.2/go.mod h1:CD5smBN5rGZo7UNe8aUiWyYE3bDWED/CQSonog9NSEg=
+github.com/tetratelabs/wazero v1.0.0-pre.3 h1:Z5fbogMUGcERzaQb9mQU8+yJSy0bVvv2ce3dfR4wcZg=
+github.com/tetratelabs/wazero v1.0.0-pre.3/go.mod h1:M8UDNECGm/HVjOfq0EOe4QfCY9Les1eq54IChMLETbc=
 github.com/yofu/dxf v0.0.0-20190710012328-5a6d1e83f16c h1:qgsxLgTXCVH8Dxar36HI5af2ZfinVz5vF8erPpyzM+A=
 github.com/yofu/dxf v0.0.0-20190710012328-5a6d1e83f16c/go.mod h1:gnT4GQzgKW8+TLI0xheUgdmNV4dsAN0WJUVnztRZkfI=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
