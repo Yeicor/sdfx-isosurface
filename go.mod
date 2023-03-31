@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/deadsy/sdfx v0.0.0-20220508165057-718104295925
-	github.com/tetratelabs/wazero v1.0.0-pre.4
+	github.com/tetratelabs/wazero v1.0.1
 )
 
 require (
